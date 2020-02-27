@@ -12,7 +12,7 @@
 
 body {
   height: 100vh;
-  background-color: #5C5757;
+  background: #5C5757;
 }
 
 header {
@@ -186,6 +186,7 @@ main .projects-box .work h3 {
 main .projects-box .work a {
   font-size: 1.4rem;
   text-decoration: none;
+  margin-right: 2rem;
 }
 
 main .projects-box .work a::before {
@@ -253,5 +254,52 @@ footer .container .call {
   width: 2rem;
   height: 2.5rem;
   fill: #efecec;
+}
+
+footer .skills-box {
+  position: fixed;
+  width: 60%;
+  right: 20%;
+  height: 50vw;
+  bottom: 11rem;
+  background-color: #363434;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 650ms;
+  transition: all 650ms;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 1;
+}
+
+footer .skills-box ul {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .skills-box ul li {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+footer .skills-box.open {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
