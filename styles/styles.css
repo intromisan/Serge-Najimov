@@ -5,7 +5,7 @@
   padding: 0;
   font-size: 10px;
   font-family: 'Roboto Mono';
-  color: #EFECEC;
+  color: #efecec;
 }
 
 body {
@@ -18,7 +18,7 @@ body img {
 }
 
 nav {
-  height: 10%;
+  height: 10vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,12 +30,19 @@ nav {
   border: 1px solid red;
 }
 
-nav .menu {
+nav .logo {
   width: 2rem;
+  height: 2rem;
+  fill: #efecec;
+}
+
+nav .menu {
+  width: 3rem;
+  fill: #efecec;
 }
 
 main {
-  height: 80%;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +50,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 3.5rem 5rem 4.9rem;
+  padding: 3rem 5rem 4.9rem;
 }
 
 main .header {
@@ -51,10 +58,10 @@ main .header {
 }
 
 main .header h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 700;
   width: 26.5rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.5rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -73,7 +80,7 @@ main .projects-box .work {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 main .projects-box .work h3 {
@@ -89,7 +96,7 @@ main .projects-box .work a {
 main .projects-box .work a::before {
   display: inline-block;
   content: "";
-  border-top: 0.1rem solid #EFECEC;
+  border-top: 0.1rem solid #efecec;
   width: 2rem;
   margin: 0 .5rem;
   -webkit-transform: translateY(-0.5rem);
@@ -102,31 +109,54 @@ main .projects-box .tabs-box {
   display: flex;
 }
 
-main .projects-box .tabs-box .tabs img {
+main .projects-box .tabs-box .tabs {
   width: 21.5rem;
   height: 31rem;
+}
+
+main .projects-box .tabs-box .tabs img {
+  height: 100%;
   border-radius: 2rem;
   -webkit-box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(0, 0, 0, 0.2);
           box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-  height: 10%;
+  height: 10vh;
+  padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #363434;
 }
 
-footer .file {
-  width: 2.5rem;
+footer .container {
+  text-align: center;
 }
 
-footer .list {
-  width: 2.5rem;
+footer .container svg {
+  margin-bottom: .5rem;
 }
 
-footer .call {
+footer .container .file {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+footer .container .list {
+  width: 2.5rem;
+  fill: #efecec;
+}
+
+footer .container .call {
   width: 2rem;
+  height: 2.5rem;
+  fill: #efecec;
 }
 /*# sourceMappingURL=styles.css.map */
