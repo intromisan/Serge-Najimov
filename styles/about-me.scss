@@ -14,14 +14,14 @@ $font-color-main: #efecec;
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background: $main-color;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    height: 10vh;
+    height: 10%;
     display: flex;
     justify-content: space-between;
     margin: 0 3rem;
@@ -111,7 +111,7 @@ header {
 }
 
 main {
-  height: 90vh;
+  height: 90%;
   .container {
     text-align: center;
     width: 28rem;

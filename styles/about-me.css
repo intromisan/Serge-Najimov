@@ -11,7 +11,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background: #707070;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  height: 10vh;
+  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +144,7 @@ header .active .bar::after {
 }
 
 main {
-  height: 90vh;
+  height: 90%;
 }
 
 main .container {
