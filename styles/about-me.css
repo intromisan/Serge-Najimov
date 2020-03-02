@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  height: 10%;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,13 +137,13 @@ header .active .bar::after {
 }
 
 main {
-  height: 90%;
-  width: 28rem;
-  margin: 0 auto;
+  height: 90vh;
 }
 
 main .container {
   text-align: center;
+  width: 28rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +189,7 @@ main .container .social-icons svg {
   width: 100%;
 }
 
-main .container .figure {
+.figure {
   position: absolute;
   bottom: 0;
   left: 0;
