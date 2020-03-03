@@ -113,7 +113,7 @@ main {
   height: 80%;
   display: flex;
   flex-direction: column;
-  padding: 3rem 5rem 4.9rem;
+  padding: 3rem 5rem;
   .header {
     padding: 0 0 5.7rem;
     h1 {
@@ -152,16 +152,18 @@ main {
         transform: translateY(-.5rem);
       }
     }
-    .tabs-box {
-      display: flex;
-      .tabs {
-        width: 18.5rem;
-        height: 28rem;
-        img {
-          height: 100%;
-          width: 100%;
+    .glider-contain {
+      .glider {
+        .tabs {
+          margin-right: 1.5rem;
+          // height: 96% !important;
           border-radius: 2rem;
-          box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(0, 0, 0, 0.2);
+          img {
+            height: 97%;
+            width: 100%;
+            border-radius: 2rem;
+            // box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(0, 0, 0, 0.2);
+          }
         }
       }
     }

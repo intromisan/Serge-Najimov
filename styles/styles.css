@@ -146,7 +146,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem 5rem 4.9rem;
+  padding: 3rem 5rem;
 }
 
 main .header {
@@ -200,23 +200,15 @@ main .projects-box .work a::before {
           transform: translateY(-0.5rem);
 }
 
-main .projects-box .tabs-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main .projects-box .glider-contain .glider .tabs {
+  margin-right: 1.5rem;
+  border-radius: 2rem;
 }
 
-main .projects-box .tabs-box .tabs {
-  width: 18.5rem;
-  height: 28rem;
-}
-
-main .projects-box .tabs-box .tabs img {
-  height: 100%;
+main .projects-box .glider-contain .glider .tabs img {
+  height: 97%;
   width: 100%;
   border-radius: 2rem;
-  -webkit-box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(0, 0, 0, 0.2);
-          box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2), -6px -6px 7px rgba(0, 0, 0, 0.2);
 }
 
 footer {

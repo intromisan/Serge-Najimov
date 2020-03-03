@@ -6,6 +6,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/glider.min.css">
   <link rel="stylesheet" href="styles/styles.css">
   <title>Serge Najimov - Front-End Developer</title>
 </head>
@@ -52,14 +53,15 @@
         <a href="#">View All</a>
       </div>
 
-      <div class="tabs-box">
-        <div class="fylo tabs">
-          <a href="#"><img src="images/Fylo.PNG" alt="fylo-prject"></a>
+      <div class="glider-contain">
+        <div class="glider">
+          <div class="fylo tabs">
+            <a href="#"><img src="images/Fylo.PNG" alt="fylo-project"></a>
+          </div>
+          <div class="huddle tabs">
+            <a href="#"><img src="images/huddle.PNG" alt="huddle-project"></a>
+          </div>
         </div>
-
-        <!-- <div class="huddle tabs">
-          <a href="#"><img src="images/huddle.PNG" alt=""></a>
-        </div> -->
       </div>
     </div>
   </main>
@@ -119,6 +121,19 @@
       </a>
     </div>
   </footer>
+
   <script src="app.js"></script>
+
+  <script src="glider.min.js"></script>
+
+  <script>
+
+      new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1.5,
+      slidesToScroll: 1,
+      draggable: true,
+    });
+
+  </script>
 </body>
 </html>
