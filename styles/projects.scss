@@ -108,3 +108,52 @@ header {
     }
   }
 }
+
+main {
+  margin-top: 6rem;
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .project-box {
+    min-width: 27.5rem;
+    margin: 3rem 5rem;
+    .name-image {
+      margin-bottom: 3.5rem;
+      h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+      img {
+        width: 100%;
+        border-radius: 2rem;
+      }
+    }
+    .description-tools {
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+      .description {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .project-links {
+      display: flex;
+      justify-content: center;
+      margin: 4rem auto 5rem;
+      width: 12.5rem;
+      svg { 
+        height: 3.5rem;
+        width: 100%;
+      }
+    }
+  }
+  .seperator {
+    border-bottom: 2px solid $font-color-main;
+    width: 15rem;
+    margin: 0 auto 5rem;
+  }
+}
