@@ -31,6 +31,12 @@ header {
       justify-content: space-evenly;
       margin: auto;
       align-items: center;
+      li {
+        &:first-child,
+        &:last-child {
+          display: none;
+        }
+      }
       a {
         font-size: 1.6rem;
         font-weight: 700;

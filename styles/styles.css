@@ -54,6 +54,10 @@ header .overlay ul {
           align-items: center;
 }
 
+header .overlay ul li:first-child, header .overlay ul li:last-child {
+  display: none;
+}
+
 header .overlay ul a {
   font-size: 1.6rem;
   font-weight: 700;
@@ -147,11 +151,11 @@ main {
   padding: 3rem 5rem;
 }
 
-main .header {
+main .headings {
   padding: 0 0 5.7rem;
 }
 
-main .header h1 {
+main .headings h1 {
   font-size: 3.8rem;
   font-weight: 700;
   width: 26.5rem;
@@ -159,7 +163,7 @@ main .header h1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-main .header h2 {
+main .headings h2 {
   font-size: 1.6rem;
   font-weight: 400;
 }
@@ -209,7 +213,7 @@ main .projects-box .glider-contain .glider .tabs {
 }
 
 main .projects-box .glider-contain .glider .tabs img {
-  height: 100%;
+  height: 97%;
   width: 92%;
   border-radius: 2rem;
 }
@@ -234,7 +238,7 @@ footer .container {
 }
 
 footer .container svg {
-  margin-bottom: .5rem;
+  margin-bottom: 0;
 }
 
 footer .container .file {
@@ -308,7 +312,107 @@ footer .skills-box.open {
 
 @media only screen and (min-width: 1024px) {
   * {
-    font-size: 22px;
+    font-size: 10px;
+  }
+  body {
+    width: 100%;
+    height: 97vh;
+  }
+  header {
+    margin: 0 20rem;
+    padding: 0;
+    height: 15vh;
+  }
+  header .logo-box {
+    width: 5rem;
+    height: 5rem;
+  }
+  header .logo-box a {
+    width: 100%;
+    height: 100%;
+  }
+  header .logo-box a .logo {
+    width: 100%;
+    height: 100%;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav .overlay {
+    all: initial;
+    width: 80%;
+  }
+  header nav .overlay ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 0;
+    padding: 0;
+    width: 70%;
+  }
+  header nav .overlay ul li:first-child, header nav .overlay ul li:last-child {
+    display: inline-block;
+  }
+  header nav .overlay ul li .resume_btn {
+    padding: .7rem 3rem;
+    background-color: #efecec;
+    color: #363434;
+    border-radius: 2rem;
+  }
+  header .menu {
+    display: none;
+  }
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 75vh;
+    padding: 0 20rem;
+    width: 100%;
+  }
+  main .headings {
+    margin: auto 0;
+    padding: 0;
+  }
+  main .headings h1 {
+    font-size: 5rem;
+  }
+  main .headings h2 {
+    font-size: 2rem;
+  }
+  main .projects-box {
+    width: 70%;
+    height: 100%;
+  }
+  main .projects-box .work {
+    display: none;
+  }
+  main .projects-box .glider-contain {
+    width: 100%;
+    height: 100%;
+    padding-left: 17rem;
+    padding-top: 3rem;
+  }
+  main .projects-box .glider-contain .glider {
+    height: 100%;
+    padding: auto 0;
+  }
+  main .projects-box .glider-contain .glider .tabs {
+    border-radius: 2rem;
+    margin: 0 auto;
+  }
+  main .projects-box .glider-contain .glider .tabs img {
+    height: 100%;
+    width: 25rem;
+    border-radius: 2rem;
+  }
+  footer {
+    height: 10vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

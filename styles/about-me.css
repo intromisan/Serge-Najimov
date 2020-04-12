@@ -54,6 +54,10 @@ header .overlay ul {
           align-items: center;
 }
 
+header .overlay ul li:first-child, header .overlay ul li:last-child {
+  display: none;
+}
+
 header .overlay ul a {
   font-size: 1.6rem;
   font-weight: 700;

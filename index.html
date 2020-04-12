@@ -31,8 +31,10 @@
     <nav>
       <div class="overlay">
         <ul>
+          <li><a href="index.html">home</a></li>
           <li><a href="projects.html">projects</a></li>
           <li><a href="about-me.html">about me</a></li>
+          <li><a href="#" class="resume_btn">resume</a></li>
         </ul>
       </div>
     </nav>
@@ -42,7 +44,7 @@
   </header>
 
   <main>
-    <div class="header">
+    <div class="headings">
       <h1>I build amazing experiences</h1>
       <h2>Front-End Developer</h2>
     </div>
@@ -130,11 +132,22 @@
 
   <script>
 
+    if (screen.width < 1024) {
       new Glider(document.querySelector('.glider'), {
-      slidesToShow: 1.2,
-      slidesToScroll: 1,
-      draggable: true,
-    });
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+        draggable: true,
+      });
+    } else {
+      new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1.5,
+        slidesToScroll: .5,
+        draggable: true,
+      });
+    }
+
+    
+  
 
   </script>
 </body>
